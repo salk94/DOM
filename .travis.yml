@@ -1,2 +1,5 @@
 language: java
-install: ant deps
+ matrix:
+  - JOB="./gradlew build"
+
+script: "$JOB"
